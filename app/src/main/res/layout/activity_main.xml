@@ -1,42 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal"
+    android:orientation="vertical"
     android:padding="20dp"
+
     tools:context=".MainActivity"
     android:background="#ffd"
     >
 
 
-
-
-    <EditText
-        android:inputType="textVisiblePassword|textNoSuggestions"
-        android:layout_marginTop="150dp"
-        android:hint="Username"
-        android:id="@+id/edusername"
+    <fragment
+        android:layout_weight="1"
+        tools:layout="@layout/fragment_a"
+        android:id="@+id/fragmenta"
+        android:name="deeplearning.deeplearning.FragmentA"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="match_parent"
+       />
 
-    <EditText
-        android:inputType="textVisiblePassword"
-        android:hint="Password"
-        android:layout_below="@+id/edusername"
-        android:id="@+id/edpassword"
+    <fragment
+        tools:layout="@layout/fragment_b"
+        android:layout_weight="1"
+        android:name="deeplearning.deeplearning.FragmentB"
+        android:id="@+id/fragmentb"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="match_parent" />
 
-    <Button
 
-        android:textColor="@android:color/white"
-        android:background="@color/colorPrimary"
-        android:layout_below="@+id/edpassword"
-        android:text="Login"
-        android:id="@+id/btnlogin"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
 
-</RelativeLayout>
+</LinearLayout>
