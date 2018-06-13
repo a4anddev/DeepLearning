@@ -5,24 +5,38 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="horizontal"
-    android:layoutDirection="rtl"
-    tools:context=".MainActivity">
+    android:padding="20dp"
+    tools:context=".MainActivity"
+    android:background="#ffd"
+    >
 
-    <!-- we knew layout linearlyaout have orientation but
-    RelativeLayout  have layoutDirection="ltr"
-        // ltr mean left to right this property by default set
-        rtl mean right to left property see with example
-    -->
 
-    <TextView
+
+
+    <EditText
+        android:inputType="textVisiblePassword|textNoSuggestions"
+        android:layout_marginTop="150dp"
+        android:hint="Username"
+        android:id="@+id/edusername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:inputType="textVisiblePassword"
+        android:hint="Password"
+        android:layout_below="@+id/edusername"
+        android:id="@+id/edpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
 
         android:textColor="@android:color/white"
-        android:background="#044"
-        android:text="@string/hello_world"
-        android:layout_width="150dp"
-        android:layout_height="150dp" />
+        android:background="@color/colorPrimary"
+        android:layout_below="@+id/edpassword"
+        android:text="Login"
+        android:id="@+id/btnlogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
-
-
-
-</>
+</RelativeLayout>
