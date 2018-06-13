@@ -1,47 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="horizontal"
+    android:layoutDirection="rtl"
     tools:context=".MainActivity">
 
-     <!--no need set layout sum with work without and set automatic
-     we use weight_sum when we need more space use 3 weight after
-     we can make space 2 weight space
-     -->
-    <TextView
-        android:layout_margin="2dp"
-        android:layout_weight="1"
-        android:layout_gravity="center_horizontal"
-        android:textColor="@android:color/white"
-        android:background="#044"
-        android:gravity="center|bottom"
-        android:text="@string/hello_world"
-        android:layout_width="0dp"
-        android:layout_height="150dp" />
+    <!-- we knew layout linearlyaout have orientation but
+    RelativeLayout  have layoutDirection="ltr"
+        // ltr mean left to right this property by default set
+        rtl mean right to left property see with example
+    -->
 
     <TextView
-        android:layout_marginTop="2dp"
-        android:layout_weight="1"
-        android:layout_gravity="center_horizontal"
+
         android:textColor="@android:color/white"
         android:background="#044"
-        android:gravity="center|bottom"
         android:text="@string/hello_world"
-        android:layout_width="0dp"
-        android:layout_height="150dp" />
-    <TextView
-        android:layout_margin="2dp"
-        android:layout_weight="1"
-        android:layout_gravity="center_horizontal"
-        android:textColor="@android:color/white"
-        android:background="#044"
-        android:gravity="center|bottom"
-        android:text="@string/hello_world"
-        android:layout_width="0dp"
+        android:layout_width="150dp"
         android:layout_height="150dp" />
 
 
-</LinearLayout>
+
+
+</>
