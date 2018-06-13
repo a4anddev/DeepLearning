@@ -4,23 +4,43 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:orientation="horizontal"
     tools:context=".MainActivity">
 
-        <!--gravity work only text use with box you have to set layout_width
-         layout_height after that gravity work on that area
-         tip - - second you can set multi pal gravity with (|) this
-         tag by
-         layout_gravity work move full box left/right/center/
-        -->
+     <!--no need set layout sum with work without and set automatic
+     we use weight_sum when we need more space use 3 weight after
+     we can make space 2 weight space
+     -->
     <TextView
-        
+        android:layout_margin="2dp"
+        android:layout_weight="1"
         android:layout_gravity="center_horizontal"
         android:textColor="@android:color/white"
         android:background="#044"
         android:gravity="center|bottom"
         android:text="@string/hello_world"
-        android:layout_width="150dp"
+        android:layout_width="0dp"
+        android:layout_height="150dp" />
+
+    <TextView
+        android:layout_marginTop="2dp"
+        android:layout_weight="1"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@android:color/white"
+        android:background="#044"
+        android:gravity="center|bottom"
+        android:text="@string/hello_world"
+        android:layout_width="0dp"
+        android:layout_height="150dp" />
+    <TextView
+        android:layout_margin="2dp"
+        android:layout_weight="1"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@android:color/white"
+        android:background="#044"
+        android:gravity="center|bottom"
+        android:text="@string/hello_world"
+        android:layout_width="0dp"
         android:layout_height="150dp" />
 
 
