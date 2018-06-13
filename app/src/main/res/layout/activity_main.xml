@@ -1,16 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-
+        <!--gravity work only text use with box you have to set layout_width
+         layout_height after that gravity work on that area
+         tip - - second you can set multi pal gravity with (|) this
+         tag by
+         layout_gravity work move full box left/right/center/
+        -->
     <TextView
+        
+        android:layout_gravity="center_horizontal"
+        android:textColor="@android:color/white"
+        android:background="#044"
+        android:gravity="center|bottom"
         android:text="@string/hello_world"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_width="150dp"
+        android:layout_height="150dp" />
 
 
-</android.support.constraint.ConstraintLayout>
+</LinearLayout>
