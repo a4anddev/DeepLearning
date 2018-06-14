@@ -6,28 +6,12 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="20dp"
-
+    android:id="@+id/root"
     tools:context=".MainActivity"
     android:background="#ffd"
     >
 
 
-    <fragment
-        android:layout_weight="1"
-        tools:layout="@layout/fragment_a"
-        android:id="@+id/fragmenta"
-        android:name="deeplearning.deeplearning.FragmentA"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-       />
-
-    <fragment
-        tools:layout="@layout/fragment_b"
-        android:layout_weight="1"
-        android:name="deeplearning.deeplearning.FragmentB"
-        android:id="@+id/fragmentb"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
 
 
 
