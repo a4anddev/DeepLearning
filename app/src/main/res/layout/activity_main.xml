@@ -6,13 +6,29 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="20dp"
-    android:id="@+id/root"
     tools:context=".MainActivity"
     android:background="#ffd"
     >
 
 
 
+    <LinearLayout
+        android:background="#344"
+        android:orientation="vertical"
+        android:id="@+id/fone"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
 
+    </LinearLayout>
 
+    <LinearLayout
+        android:background="#364"
+        android:orientation="vertical"
+        android:id="@+id/ftwo"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+    </LinearLayout>
 </LinearLayout>

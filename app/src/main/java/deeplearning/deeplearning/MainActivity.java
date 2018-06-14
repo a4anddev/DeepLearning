@@ -17,10 +17,12 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         FragmentA obja = new FragmentA();
+        FragmentB objb = new FragmentB();
 
         FragmentManager manager = getSupportFragmentManager();
         FragmentTransaction transaction = manager.beginTransaction();
-        transaction.add(R.id.root, obja, "a");
+        transaction.add(R.id.fone, obja, "a");
+        transaction.add(R.id.ftwo, objb, "b");
         transaction.commit();
 
 
