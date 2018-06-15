@@ -10,25 +10,11 @@
     android:background="#ffd"
     >
 
-
-
-    <LinearLayout
-        android:background="#344"
-        android:orientation="vertical"
-        android:id="@+id/fone"
-        android:layout_weight="1"
+    <Button
+        android:text="Dialog"
+        android:id="@+id/btndialog"
         android:layout_width="match_parent"
-        android:layout_height="0dp">
+        android:layout_height="wrap_content" />
 
-    </LinearLayout>
 
-    <LinearLayout
-        android:background="#364"
-        android:orientation="vertical"
-        android:id="@+id/ftwo"
-        android:layout_weight="1"
-        android:layout_width="match_parent"
-        android:layout_height="0dp">
-
-    </LinearLayout>
 </LinearLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#282828"
+    tools:context=".FragmentDialog">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:textColor="@android:color/white"
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add a drop"
+        android:layout_marginTop="36dp"
+        android:layout_marginBottom="36dp"
+        android:textSize="18sp"
+        />
+
+    <ImageView
+        android:id="@+id/closeimg"
+        android:background="@null"
+        android:src="@drawable/ic_close"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/tv_title"
+        />
+
+    <EditText
+        android:id="@+id/add_text"
+        android:layout_marginTop="20dp"
+        android:padding="16dp"
+        android:layout_below="@+id/closeimg"
+        android:hint="What is it?"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <DatePicker
+        android:id="@+id/dateid"
+       android:layout_below="@+id/add_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></DatePicker>
+
+    <Button
+        android:text="Add"
+        android:layout_below="@+id/dateid"
+        android:id="@+id/btnadd"
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

@@ -1,5 +1,6 @@
 package deeplearning.deeplearning;
 
+import android.app.DialogFragment;
 import android.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
@@ -11,21 +12,26 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
+    Button btndialog;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        FragmentA obja = new FragmentA();
-        FragmentB objb = new FragmentB();
+        btndialog = findViewById(R.id.btndialog);
 
-        FragmentManager manager = getSupportFragmentManager();
-        FragmentTransaction transaction = manager.beginTransaction();
-        transaction.add(R.id.fone, obja, "a");
-        transaction.add(R.id.ftwo, objb, "b");
-        transaction.commit();
+        btndialog.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showDialogAdd();
+            }
+        });
 
+    }
 
+ private void showDialogAdd() {
 
+        FragmentDialog dialog = new FragmentDialog();
+        dialog.show(getSupportFragmentManager(), "Add");
     }
 }
