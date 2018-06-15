@@ -10,11 +10,9 @@
     android:background="#ffd"
     >
 
-    <Button
-        android:text="Dialog"
-        android:id="@+id/btndialog"
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recylerviewid"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
-
+        android:layout_height="match_parent" />
 </LinearLayout>
