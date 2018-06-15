@@ -23,8 +23,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         recyclerView = findViewById(R.id.recylerviewid);
 
-        LinearLayoutManager manager= new LinearLayoutManager(this);
-        recyclerView.setLayoutManager(manager);
+        // you can remove linearlayoutmanager you can set in xml file also
+       /* LinearLayoutManager manager= new LinearLayoutManager(this);
+        recyclerView.setLayoutManager(manager);*/
         recyclerView.setAdapter(new AdapterDemy(this));
 
 

@@ -10,9 +10,11 @@
     android:background="#ffd"
     >
 
-
+<!--  app:LayoutManager="android.support.v7.widget.LinearLayoutManager"
+      no need to set layoutmanger in java right now-->
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recylerviewid"
         android:layout_width="match_parent"
+        app:layoutManager="android.support.v7.widget.LinearLayoutManager"
         android:layout_height="match_parent" />
 </LinearLayout>
